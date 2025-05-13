@@ -1,19 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <ModMetaData>
-    <name>Follow Me!</name>
-    <author>Fluffy</author>
-    <packageId>Fluffy.FollowMe</packageId>
-    <description>Gives the camera tracking capabilities.
+    <name>Follow Me</name>
+    <author>Tanndlin</author>
+    <packageId>Tanndlin.FollowMe</packageId>
+    <description>Ported to 1.5 and a minor bug fix.
 
-&lt;size=28&gt;Features&lt;/size&gt;
+The mod seemed abandoned, so I decided to port it to 1.5 and take over. All Credits to Fluffy (original mod creator):
+https://steamcommunity.com/id/FluffyMods/myworkshopfiles/?appid=294100
 
+&lt;size=28&gt;Description&lt;/size&gt;
+Gives the camera tracking capabilities. 
+
+&lt;size=20&gt;Features&lt;/size&gt;
 Press the 'Home' key (default, can be changed with in-game keybinding settings) while any colonist, enemy, animal or item is selected, and the camera will follow them (including furniture and plants - but they tend to not move much). Alternatively, you can click with the middle mouse button on colonists in the Colonist Bar on top of the screen to toggle following.
 
 &lt;b&gt;Does not require a new save game&lt;/b&gt;
-Can safely be enabled/disabled in ongoing saves.</description>
-    <url>https://github.com/fluffy-mods/FollowMe</url>
+Can safely be enabled/disabled in ongoing saves.
+
+&lt;size=20&gt;Fixes&lt;/size&gt;
+- Fixed the issue where the camera would not stop following when hitting next/previous pawn hotkey
+    </description>
+    <url>https://github.com/tanndlin/FollowMe</url>
     <supportedVersions>
-        <li>1.4</li>
+        <li>1.5</li>
     </supportedVersions>
     <modDependencies>
         <li>

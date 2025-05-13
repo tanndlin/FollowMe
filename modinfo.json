@@ -1,8 +1,8 @@
 {
-    "name": "Follow Me!",
+    "name": "Follow Me",
     "sourceDir": ".",
     "targetDir": "FollowMe",
-    "url": "https://github.com/fluffy-mods/FollowMe",
+    "url": "https://github.com/tanndlin/FollowMe",
     "version": {
         "major": 5,
         "minor": 5,
@@ -10,13 +10,13 @@
     },
     "author": {
         "name": "Fluffy",
-        "url": "https://github.com/fluffy-mods/",
+        "url": "https://github.com/tanndlin/",
         "email": "fluffy.l2032@gmail.com"
     },
     "git": {
-        "owner": "fluffy-mods",
+        "owner": "tanndlin",
         "repo": "FollowMe",
-        "url": "https://github.com/fluffy-mods/FollowMe"
+        "url": "https://github.com/tanndlin/FollowMe"
     },
     "dependencies": [
         {
@@ -27,107 +27,7 @@
             "download": "https://github.com/pardeike/HarmonyRimWorld/releases/latest"
         }
     ],
-    "changelog": [
-        {
-            "date": "2022-10-14T21:13:56.000Z",
-            "message": "release v5.4.108",
-            "author": {
-                "name": "FluffierThanThou",
-                "email": "fluffy.l2032@gmail.com"
-            },
-            "hash": "fa3639b66b69f950f8b87d8f76788bd72b35ad92"
-        },
-        {
-            "date": "2022-10-14T21:13:37.000Z",
-            "message": "initial 1.4 build",
-            "author": {
-                "name": "FluffierThanThou",
-                "email": "fluffy.l2032@gmail.com"
-            },
-            "hash": "aa9190e9244fde7be9e06e1fa4d46a158a79a136"
-        },
-        {
-            "date": "2022-02-26T16:07:40.000Z",
-            "message": "Update description",
-            "author": {
-                "name": "Fluffy",
-                "email": "fluffy.l2032@gmail.com"
-            },
-            "hash": "275f7352906e83be3f0fc0ec95b0b647ea9b03ee"
-        },
-        {
-            "date": "2022-01-24T11:06:24.000Z",
-            "message": "Add files via upload",
-            "author": {
-                "name": "Ragnar-F",
-                "email": "1332321+Ragnar-F@users.noreply.github.com"
-            },
-            "hash": "337730f1a0dd18c7b658b334aa23940848adb9c5"
-        },
-        {
-            "date": "2022-01-24T11:05:42.000Z",
-            "message": "Update Keyed.xml",
-            "author": {
-                "name": "Ragnar-F",
-                "email": "1332321+Ragnar-F@users.noreply.github.com"
-            },
-            "hash": "b94fb25d623037b8c1cc61aea5b07b924c3e6001"
-        },
-        {
-            "date": "2022-01-24T11:04:17.000Z",
-            "message": "Rename Languages/German/Keyed.xml to Languages/German/Keyed/Keyed.xml",
-            "author": {
-                "name": "Ragnar-F",
-                "email": "1332321+Ragnar-F@users.noreply.github.com"
-            },
-            "hash": "69de14f6384f3c9bf11aad15377e3c22c6a18500"
-        },
-        {
-            "date": "2021-08-13T08:11:44.000Z",
-            "message": "French translation",
-            "author": {
-                "name": "stiphendor",
-                "email": "82418064+stiphendor@users.noreply.github.com"
-            },
-            "hash": "fe47a2799cc47a94e4780f16753f4d72a3d68036"
-        },
-        {
-            "date": "2021-08-11T08:21:19.000Z",
-            "message": "Update Japanese translation",
-            "author": {
-                "name": "Proxyer",
-                "email": "proxyer666@gmail.com"
-            },
-            "hash": "ef561447aea17c4d44879c335e80f0d194a1ba53"
-        },
-        {
-            "date": "2021-08-10T21:44:19.000Z",
-            "message": "update preview image",
-            "author": {
-                "name": "Fluffy",
-                "email": "fluffy.l2032@gmail.com"
-            },
-            "hash": "36e6e97adcc7d2a23a91a4145617ce0588b64258"
-        },
-        {
-            "date": "2021-08-10T20:36:05.000Z",
-            "message": "add 'Royalty Watch' camera",
-            "author": {
-                "name": "Fluffy",
-                "email": "fluffy.l2032@gmail.com"
-            },
-            "hash": "843b972ebf9e3f47907b1215918ab2261ebab6da"
-        },
-        {
-            "date": "2021-08-10T20:01:29.000Z",
-            "message": "initial 1.3 update",
-            "author": {
-                "name": "Fluffy",
-                "email": "fluffy.l2032@gmail.com"
-            },
-            "hash": "4f3105eab8b9b4527b08fe825f338b327dbab442"
-        }
-    ],
+    "changelog": [],
     "contributions": [
         {
             "hash": "3a95353696bbf0f8871dae25236dce73b56dab17",
