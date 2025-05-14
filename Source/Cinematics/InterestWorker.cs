@@ -17,7 +17,7 @@ namespace FollowMe {
         public abstract float InterestFor(Thing thing);
     }
 
-    public class InterestWorker_AmbulanceChaser: InterestWorker {
+    public class InterestWorker_AmbulanceChaser : InterestWorker {
         public override ThingRequestGroup PotentiallyInteresting => ThingRequestGroup.Pawn;
 
         public override float InterestFor(Thing thing) {
@@ -44,7 +44,7 @@ namespace FollowMe {
         }
     }
 
-    public class InterestWorker_Attenborough: InterestWorker {
+    public class InterestWorker_Attenborough : InterestWorker {
         public override ThingRequestGroup PotentiallyInteresting => ThingRequestGroup.Pawn;
 
         public override float InterestFor(Thing thing) {
@@ -72,7 +72,7 @@ namespace FollowMe {
 
             interest *= pawn.RaceProps.wildness;
 
-            float? commonality = pawn.RaceProps.wildBiomes?.Find( br => br.biome == Find.CurrentMap.Biome )?.commonality;
+            float? commonality = pawn.RaceProps.wildBiomes?.Find(br => br.biome == Find.CurrentMap.Biome)?.commonality;
             if (commonality.HasValue) {
                 interest /= commonality.Value;
             }
@@ -81,23 +81,23 @@ namespace FollowMe {
         }
     }
 
-    public class InterestWorker_FlogIt: InterestWorker {
+    public class InterestWorker_FlogIt : InterestWorker {
         public override ThingRequestGroup PotentiallyInteresting => ThingRequestGroup.Everything;
         public override float InterestFor(Thing thing) {
             if (thing is Pawn) {
                 return 0f;
             }
 
-            float interest = thing.GetStatValue( StatDefOf.MarketValue );
+            float interest = thing.GetStatValue(StatDefOf.MarketValue);
             if (thing.TryGetQuality(out QualityCategory quality)) {
-                interest *= (int) quality + 1;
+                interest *= (int)quality + 1;
             }
 
             return interest;
         }
     }
 
-    public class InterestWorker_RoyaltyWatch: InterestWorker {
+    public class InterestWorker_RoyaltyWatch : InterestWorker {
         public override ThingRequestGroup PotentiallyInteresting => ThingRequestGroup.Pawn;
         private static float? _maxRelationImportance;
         protected static float MaxRelationImportance => _maxRelationImportance ??= DefDatabase<PawnRelationDef>.AllDefsListForReading.Max(d => d.importance);

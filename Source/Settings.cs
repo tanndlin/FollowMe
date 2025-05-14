@@ -6,10 +6,10 @@ using UnityEngine;
 using Verse;
 
 namespace FollowMe {
-    public class Settings: ModSettings {
-        public static  bool    showNotifications = true;
-        public static  bool    playSounds        = true;
-        public static  bool    edgeDetection     = true;
+    public class Settings : ModSettings {
+        public static bool showNotifications = true;
+        public static bool playSounds = true;
+        public static bool edgeDetection = true;
         private static KeyBind _followMeKey;
 
         public static KeyBind FollowMeKey {

@@ -9,21 +9,21 @@ using UnityEngine;
 using Verse;
 
 namespace FollowMe {
-    public class CinematicCamera: Def {
-        private          Thing                  _currentSubject;
+    public class CinematicCamera : Def {
+        private Thing _currentSubject;
         private readonly Dictionary<Thing, int> _pastSubjects = new Dictionary<Thing, int>();
-        private          int                    _ticksOfFame;
-        private          InterestWorker         _worker;
+        private int _ticksOfFame;
+        private InterestWorker _worker;
 
 
-        public int      fameCooldown = 300;
-        public Type     interestWorkerType;
-        public IntRange secondsOfFame = new IntRange( 5, 15 );
+        public int fameCooldown = 300;
+        public Type interestWorkerType;
+        public IntRange secondsOfFame = new IntRange(5, 15);
 
         public InterestWorker Worker {
             get {
                 if (_worker == null) {
-                    _worker = (InterestWorker) Activator.CreateInstance(interestWorkerType);
+                    _worker = (InterestWorker)Activator.CreateInstance(interestWorkerType);
                 }
 
                 return _worker;
@@ -61,13 +61,13 @@ namespace FollowMe {
 
         public virtual void FollowNewSubject() {
             IEnumerable<Thing> targets = Find.CurrentMap.listerThings
-                              .ThingsInGroup( Worker.PotentiallyInteresting )
-                              .Where( t => t != Subject && Worker.Interesting( t ) );
+                              .ThingsInGroup(Worker.PotentiallyInteresting)
+                              .Where(t => t != Subject && Worker.Interesting(t));
             if (!targets.Any()) {
                 CinematicCameraManager.Stop("Fluffy.FollowMe.Cinematics.NoValidTargets".Translate());
             }
 
-            Thing target = targets.MaxBy( t => Worker.InterestFor( t ) * CooldownFactor( t ) );
+            Thing target = targets.MaxBy(t => Worker.InterestFor(t) * CooldownFactor(t));
 
             Subject = target;
             _ticksOfFame = Rand.Range(GenTicks.TicksPerRealSecond * secondsOfFame.min,

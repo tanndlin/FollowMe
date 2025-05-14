@@ -7,7 +7,7 @@ using HarmonyLib;
 using Verse;
 
 namespace FollowMe {
-    public class CinematicCameraManager: GameComponent {
+    public class CinematicCameraManager : GameComponent {
         public static CinematicCamera currentCamera;
         private static bool _patched;
 
@@ -17,7 +17,7 @@ namespace FollowMe {
             base.FinalizeInit();
 
             if (!_patched) {
-                Harmony harmonyInstance = new( "Fluffy.FollowMe" );
+                Harmony harmonyInstance = new("Fluffy.FollowMe");
                 harmonyInstance.PatchAll(Assembly.GetExecutingAssembly());
                 _patched = true;
             }
@@ -47,7 +47,7 @@ namespace FollowMe {
         }
 
         public static void CycleCameras() {
-            int curIndex = Cameras.IndexOf( currentCamera );
+            int curIndex = Cameras.IndexOf(currentCamera);
 
             // stop current
             currentCamera?.Stop(false);

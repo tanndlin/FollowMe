@@ -8,7 +8,7 @@ using Verse;
 using Verse.Sound;
 
 namespace FollowMe {
-    public class Mod: Verse.Mod {
+    public class Mod : Verse.Mod {
         public static Settings Settings { get; private set; }
         public Mod(ModContentPack content) : base(content) {
             Settings = GetSettings<Settings>();
